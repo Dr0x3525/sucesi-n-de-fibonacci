@@ -8,19 +8,17 @@
 
 // Aquí tu código
 
-let a = 0;
-let b = 1;
-let c = 0;
 
 function SumaNumeros() {
-    let finalSucesion = 50; 
-    for (i=0; i<finalSucesion; i++) {
-        c = b + a;
-        b = a;
-        a = c;
+    let ArrayCodigoFibonacci = [0,1];
 
-        console.log(c)
+    for (i=0; i<48; i++) {
+        ArrayCodigoFibonacci.push(ArrayCodigoFibonacci[ArrayCodigoFibonacci.length-1] +ArrayCodigoFibonacci[ArrayCodigoFibonacci.length-2] )
     };
+
+    console.log("Numeros " + ArrayCodigoFibonacci.length)
+    console.log(ArrayCodigoFibonacci)
+
 }
 
 SumaNumeros()
